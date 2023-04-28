@@ -1,5 +1,5 @@
 @import "./variables.css";
-@import "../fonts/fonts.css";
+@import "fonts.css";
 
 .wrapper {
     width: 100%;
