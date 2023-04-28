@@ -1,11 +1,7 @@
 @import "./variables.css";
-@import "../fonts/fonts.css";
+@import "./fonts.css";
 
 .wrapper {
     width: 100%;
     min-height: 100vh;
-}
-
-p{
-    font-family: 'Gilroy';
 }
