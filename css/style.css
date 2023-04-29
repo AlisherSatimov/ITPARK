@@ -1,7 +1,35 @@
 @import "./variables.css";
 @import "./fonts.css";
 
-.wrapper {
+.container {
+    width: 1140px;
+}
+
+/* Start HEADER */
+.header {
     width: 100%;
     min-height: 100vh;
+    background: url('../images/header-bg.svg');
+    background-size: cover;
+    background-position: top center;
+}
+
+
+.header__menu {
+    width: 114px;
+    height: 100vh;
+    background: #FFFFFF;
+    box-shadow: 8px 4px 41px rgba(0, 0, 0, 0.08);
+}
+
+.site-nav {
+    margin-top: 55px;
+}
+
+.site-nav .nav-item:not(:last-child) {
+    margin-right: 40px;
+}
+
+.header__site-logo {
+    margin-top: 27px;
 }
