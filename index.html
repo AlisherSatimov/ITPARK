@@ -6,7 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="icons/fontawesome-free-6.4.0-web/">
   <title>IT PARK</title>
+
 </head>
 <body>
 
@@ -143,113 +145,678 @@
 
   <!-- Start MAIN -->
   <main class="main">
-    <div class="container">
-      <!-- Start COURSES -->
-      <div class="courses">
-        <div class="courses__header d-flex justify-content-between">
-          <h1 class="courses__header-title">Bizning Kurslar</h1>
-          <ul class="nav nav-pills mb-3 courses__header-btn" id="pills-tab" role="tablist">
-            <li class="nav-item" role="presentation">
-              <button class="btn btn-light active" id="pills-all-tab" data-bs-toggle="pill" data-bs-target="#pills-all" type="button" role="tab" aria-controls="pills-all" aria-selected="true">Home</button>
-            </li>
-            <li class="nav-item" role="presentation">
-              <button class="btn btn-light" id="pills-design-tab" data-bs-toggle="pill" data-bs-target="#pills-design" type="button" role="tab" aria-controls="pills-design" aria-selected="false">Profile</button>
-            </li>
-            <li class="nav-item" role="presentation">
-              <button class="btn btn-light" id="pills-programming-tab" data-bs-toggle="pill" data-bs-target="#pills-programming" type="button" role="tab" aria-controls="pills-programming" aria-selected="false">Contact</button>
-            </li>   
-            <li class="nav-item" role="presentation">
-              <button class="btn btn-light" id="pills-foundation-tab" data-bs-toggle="pill" data-bs-target="#pills-foundation" type="button" role="tab" aria-controls="pills-foundation" aria-selected="false">Contact</button>
-            </li> 
-          </ul>
-        </div>
-        <div class="courses__body">
-          <div class="tab-content" id="pills-tabContent">
-            <div class="tab-pane fade show active" id="pills-all" role="tabpanel" aria-labelledby="pills-all-tab" tabindex="0">
-              <div class="row row-cols-1 row-cols-md-3 g-4 courses__body-cards">
-                
-                <div class="col">
-                  <div class="courses__card-item">
-                    <img src="images/course-img.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
+    <div class="course__wrapper position-relative w-100">
+      <div class="container">
+        <!-- Start COURSES -->
+        <div class="courses">
+          <div class="courses__header d-flex justify-content-between">
+            <h1 class="courses__header-title text-uppercase">Bizning Kurslar</h1>
+            <ul class="nav nav-pills mb-3 courses__header-btn" id="pills-tab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="btn active courses__btn" id="pills-all-tab" data-bs-toggle="pill" data-bs-target="#pills-all" type="button" role="tab" aria-controls="pills-all" aria-selected="true">Barcha</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="btn courses__btn" id="pills-design-tab" data-bs-toggle="pill" data-bs-target="#pills-design" type="button" role="tab" aria-controls="pills-design" aria-selected="false">Dizayn</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="btn courses__btn" id="pills-programming-tab" data-bs-toggle="pill" data-bs-target="#pills-programming" type="button" role="tab" aria-controls="pills-programming" aria-selected="false">Dasturlash</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="btn courses__btn" id="pills-foundation-tab" data-bs-toggle="pill" data-bs-target="#pills-foundation" type="button" role="tab" aria-controls="pills-foundation" aria-selected="false">Foundation</button>
+              </li>
+            </ul>
+          </div>
+          <div class="courses__body">
+            <div class="tab-content" id="pills-tabContent">
+              <div class="tab-pane fade show active" id="pills-all" role="tabpanel" aria-labelledby="pills-all-tab" tabindex="0">
+                <div class="row row-cols-1 row-cols-md-3 g-4 courses__body-cards">
+      
+                  <div class="col">
+                    <div class="courses__card-item">
+                      <img src="images/course-img.png" class="card-img-top mb-2" alt="Image">
+                      <div class="card-body">
+                        <h5 class="card-title mb-2">Web dizayn va grafik dizayn</h5>
+                        <div class="card-text d-flex gap-4 mb-2">
+                          <div class="card-text__lessons d-flex gap-2">
+                            <img src="images/book-icon.svg" class="course__card-icon user-icon" alt="Book">
+                            <span class="course__card-lessons">Darslar: 25</span>
+                          </div>
+                          <div class="card-text__lessons d-flex gap-2">
+                            <img src="images/user-icon.svg" class="course__card-icon user-icon" alt="O'quvchilar">
+                            <span class="course__card-lessons">O'quvchilar: 198</span>
+                          </div>
+                          <div class="card-text__lessons d-flex gap-2">
+                            <img src="images/certificate-icon.svg" class="course__card-icon certificate-icon" alt="Sertifikat">
+                            <span class="course__card-lessons">Sertifikat</span>
+                          </div>
+                        </div>
+                        <div class="card__button d-flex justify-content-between">
+                          <a href="#" class="btn mt-1 course__about-btn position-relative">Kurs haqida</a>
+                          <img src="images/Score (4).svg" alt="Score">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="courses__card-item">
+                      <img src="images/course-img.png" class="card-img-top mb-2" alt="Image">
+                      <div class="card-body">
+                        <h5 class="card-title mb-2">IT Foundation</h5>
+                        <div class="card-text d-flex gap-4 mb-2">
+                          <div class="card-text__lessons d-flex gap-2">
+                            <img src="images/book-icon.svg" class="course__card-icon user-icon" alt="Book">
+                            <span class="course__card-lessons">Darslar: 25</span>
+                          </div>
+                          <div class="card-text__lessons d-flex gap-2">
+                            <img src="images/user-icon.svg" class="course__card-icon user-icon" alt="O'quvchilar">
+                            <span class="course__card-lessons">O'quvchilar: 198</span>
+                          </div>
+                          <div class="card-text__lessons d-flex gap-2">
+                            <img src="images/certificate-icon.svg" class="course__card-icon certificate-icon" alt="Sertifikat">
+                            <span class="course__card-lessons">Sertifikat</span>
+                          </div>
+                        </div>
+                        <div class="card__button d-flex justify-content-between">
+                          <a href="#" class="btn mt-1 course__about-btn position-relative">Kurs haqida</a>
+                          <img src="images/Score.svg" alt="Score">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="courses__card-item">
+                      <img src="images/course-img.png" class="card-img-top mb-2" alt="Image">
+                      <div class="card-body">
+                        <h5 class="card-title mb-2">Fronted Dasturlash</h5>
+                        <div class="card-text d-flex gap-4 mb-2">
+                          <div class="card-text__lessons d-flex gap-2">
+                            <img src="images/book-icon.svg" class="course__card-icon user-icon" alt="Book">
+                            <span class="course__card-lessons">Darslar: 25</span>
+                          </div>
+                          <div class="card-text__lessons d-flex gap-2">
+                            <img src="images/user-icon.svg" class="course__card-icon user-icon" alt="O'quvchilar">
+                            <span class="course__card-lessons">O'quvchilar: 198</span>
+                          </div>
+                          <div class="card-text__lessons d-flex gap-2">
+                            <img src="images/certificate-icon.svg" class="course__card-icon certificate-icon" alt="Sertifikat">
+                            <span class="course__card-lessons">Sertifikat</span>
+                          </div>
+                        </div>
+                        <div class="card__button d-flex justify-content-between">
+                          <a href="#" class="btn mt-1 course__about-btn position-relative">Kurs haqida</a>
+                          <img src="images/Score (4).svg" alt="Score">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="courses__card-item">
+                      <img src="images/course-img.png" class="card-img-top mb-2" alt="Image">
+                      <div class="card-body">
+                        <h5 class="card-title mb-2">3D Modeling</h5>
+                        <div class="card-text d-flex gap-4 mb-2">
+                          <div class="card-text__lessons d-flex gap-2">
+                            <img src="images/book-icon.svg" class="course__card-icon user-icon" alt="Book">
+                            <span class="course__card-lessons">Darslar: 25</span>
+                          </div>
+                          <div class="card-text__lessons d-flex gap-2">
+                            <img src="images/user-icon.svg" class="course__card-icon user-icon" alt="O'quvchilar">
+                            <span class="course__card-lessons">O'quvchilar: 198</span>
+                          </div>
+                          <div class="card-text__lessons d-flex gap-2">
+                            <img src="images/certificate-icon.svg" class="course__card-icon certificate-icon" alt="Sertifikat">
+                            <span class="course__card-lessons">Sertifikat</span>
+                          </div>
+                        </div>
+                        <div class="card__button d-flex justify-content-between">
+                          <a href="#" class="btn mt-1 course__about-btn position-relative">Kurs haqida</a>
+                          <img src="images/Score (4).svg" alt="Score">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="courses__card-item">
+                      <img src="images/course-img.png" class="card-img-top mb-2" alt="Image">
+                      <div class="card-body">
+                        <h5 class="card-title mb-2">Video Montaj</h5>
+                        <div class="card-text d-flex gap-4 mb-2">
+                          <div class="card-text__lessons d-flex gap-2">
+                            <img src="images/book-icon.svg" class="course__card-icon user-icon" alt="Book">
+                            <span class="course__card-lessons">Darslar: 25</span>
+                          </div>
+                          <div class="card-text__lessons d-flex gap-2">
+                            <img src="images/user-icon.svg" class="course__card-icon user-icon" alt="O'quvchilar">
+                            <span class="course__card-lessons">O'quvchilar: 198</span>
+                          </div>
+                          <div class="card-text__lessons d-flex gap-2">
+                            <img src="images/certificate-icon.svg" class="course__card-icon certificate-icon" alt="Sertifikat">
+                            <span class="course__card-lessons">Sertifikat</span>
+                          </div>
+                        </div>
+                        <div class="card__button d-flex justify-content-between">
+                          <a href="#" class="btn mt-1 course__about-btn position-relative">Kurs haqida</a>
+                          <img src="images/Score.svg" alt="Score">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="courses__card-item">
+                      <img src="images/course-img.png" class="card-img-top mb-2" alt="Image">
+                      <div class="card-body">
+                        <h5 class="card-title mb-2">Backend Dasturlash</h5>
+                        <div class="card-text d-flex gap-4 mb-2">
+                          <div class="card-text__lessons d-flex gap-2">
+                            <img src="images/book-icon.svg" class="course__card-icon user-icon" alt="Book">
+                            <span class="course__card-lessons">Darslar: 25</span>
+                          </div>
+                          <div class="card-text__lessons d-flex gap-2">
+                            <img src="images/user-icon.svg" class="course__card-icon user-icon" alt="O'quvchilar">
+                            <span class="course__card-lessons">O'quvchilar: 198</span>
+                          </div>
+                          <div class="card-text__lessons d-flex gap-2">
+                            <img src="images/certificate-icon.svg" class="course__card-icon certificate-icon" alt="Sertifikat">
+                            <span class="course__card-lessons">Sertifikat</span>
+                          </div>
+                        </div>
+                        <div class="card__button d-flex justify-content-between">
+                          <a href="#" class="btn mt-1 course__about-btn position-relative">Kurs haqida</a>
+                          <img src="images/Score (4).svg" alt="Score">
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
-
-                <div class="col">
-                  <div class="card">
-                    <img src="images/course-img.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col">
-                  <div class="card">
-                    <img src="images/course-img.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col">
-                  <div class="card">
-                    <img src="images/course-img.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col">
-                  <div class="card">
-                    <img src="images/course-img.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col">
-                  <div class="card">
-                    <img src="images/course-img.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                  </div>
-                </div>
-                
               </div>
-            </div>
-            <div class="tab-pane fade" id="pills-design" role="tabpanel" aria-labelledby="pills-design-tab" tabindex="0">
-              2
-            </div>
-            <div class="tab-pane fade" id="pills-programming" role="tabpanel" aria-labelledby="pills-programming-tab" tabindex="0">
-              3
-            </div>
-            <div class="tab-pane fade" id="pills-foundation" role="tabpanel" aria-labelledby="pills-foundation-tab" tabindex="0">
-              4
+              <div class="tab-pane fade" id="pills-design" role="tabpanel" aria-labelledby="pills-design-tab" tabindex="0">
+                <div class="row row-cols-1 row-cols-md-3 g-4 courses__body-cards">
+      
+                  <div class="col">
+                    <div class="courses__card-item">
+                      <img src="images/course-img.png" class="card-img-top mb-2" alt="Image">
+                      <div class="card-body">
+                        <h5 class="card-title mb-2">Web dizayn va grafik dizayn</h5>
+                        <div class="card-text d-flex gap-4 mb-2">
+                          <div class="card-text__lessons d-flex gap-2">
+                            <img src="images/book-icon.svg" class="course__card-icon user-icon" alt="Book">
+                            <span class="course__card-lessons">Darslar: 25</span>
+                          </div>
+                          <div class="card-text__lessons d-flex gap-2">
+                            <img src="images/user-icon.svg" class="course__card-icon user-icon" alt="O'quvchilar">
+                            <span class="course__card-lessons">O'quvchilar: 198</span>
+                          </div>
+                          <div class="card-text__lessons d-flex gap-2">
+                            <img src="images/certificate-icon.svg" class="course__card-icon certificate-icon" alt="Sertifikat">
+                            <span class="course__card-lessons">Sertifikat</span>
+                          </div>
+                        </div>
+                        <div class="card__button d-flex justify-content-between">
+                          <a href="#" class="btn mt-1 course__about-btn position-relative">Kurs haqida</a>
+                          <img src="images/Score (4).svg" alt="Score">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="courses__card-item">
+                      <img src="images/course-img.png" class="card-img-top mb-2" alt="Image">
+                      <div class="card-body">
+                        <h5 class="card-title mb-2">IT Foundation</h5>
+                        <div class="card-text d-flex gap-4 mb-2">
+                          <div class="card-text__lessons d-flex gap-2">
+                            <img src="images/book-icon.svg" class="course__card-icon user-icon" alt="Book">
+                            <span class="course__card-lessons">Darslar: 25</span>
+                          </div>
+                          <div class="card-text__lessons d-flex gap-2">
+                            <img src="images/user-icon.svg" class="course__card-icon user-icon" alt="O'quvchilar">
+                            <span class="course__card-lessons">O'quvchilar: 198</span>
+                          </div>
+                          <div class="card-text__lessons d-flex gap-2">
+                            <img src="images/certificate-icon.svg" class="course__card-icon certificate-icon" alt="Sertifikat">
+                            <span class="course__card-lessons">Sertifikat</span>
+                          </div>
+                        </div>
+                        <div class="card__button d-flex justify-content-between">
+                          <a href="#" class="btn mt-1 course__about-btn position-relative">Kurs haqida</a>
+                          <img src="images/Score.svg" alt="Score">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="courses__card-item">
+                      <img src="images/course-img.png" class="card-img-top mb-2" alt="Image">
+                      <div class="card-body">
+                        <h5 class="card-title mb-2">Fronted Dasturlash</h5>
+                        <div class="card-text d-flex gap-4 mb-2">
+                          <div class="card-text__lessons d-flex gap-2">
+                            <img src="images/book-icon.svg" class="course__card-icon user-icon" alt="Book">
+                            <span class="course__card-lessons">Darslar: 25</span>
+                          </div>
+                          <div class="card-text__lessons d-flex gap-2">
+                            <img src="images/user-icon.svg" class="course__card-icon user-icon" alt="O'quvchilar">
+                            <span class="course__card-lessons">O'quvchilar: 198</span>
+                          </div>
+                          <div class="card-text__lessons d-flex gap-2">
+                            <img src="images/certificate-icon.svg" class="course__card-icon certificate-icon" alt="Sertifikat">
+                            <span class="course__card-lessons">Sertifikat</span>
+                          </div>
+                        </div>
+                        <div class="card__button d-flex justify-content-between">
+                          <a href="#" class="btn mt-1 course__about-btn position-relative">Kurs haqida</a>
+                          <img src="images/Score (4).svg" alt="Score">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="courses__card-item">
+                      <img src="images/course-img.png" class="card-img-top mb-2" alt="Image">
+                      <div class="card-body">
+                        <h5 class="card-title mb-2">3D Modeling</h5>
+                        <div class="card-text d-flex gap-4 mb-2">
+                          <div class="card-text__lessons d-flex gap-2">
+                            <img src="images/book-icon.svg" class="course__card-icon user-icon" alt="Book">
+                            <span class="course__card-lessons">Darslar: 25</span>
+                          </div>
+                          <div class="card-text__lessons d-flex gap-2">
+                            <img src="images/user-icon.svg" class="course__card-icon user-icon" alt="O'quvchilar">
+                            <span class="course__card-lessons">O'quvchilar: 198</span>
+                          </div>
+                          <div class="card-text__lessons d-flex gap-2">
+                            <img src="images/certificate-icon.svg" class="course__card-icon certificate-icon" alt="Sertifikat">
+                            <span class="course__card-lessons">Sertifikat</span>
+                          </div>
+                        </div>
+                        <div class="card__button d-flex justify-content-between">
+                          <a href="#" class="btn mt-1 course__about-btn position-relative">Kurs haqida</a>
+                          <img src="images/Score (4).svg" alt="Score">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="courses__card-item">
+                      <img src="images/course-img.png" class="card-img-top mb-2" alt="Image">
+                      <div class="card-body">
+                        <h5 class="card-title mb-2">Video Montaj</h5>
+                        <div class="card-text d-flex gap-4 mb-2">
+                          <div class="card-text__lessons d-flex gap-2">
+                            <img src="images/book-icon.svg" class="course__card-icon user-icon" alt="Book">
+                            <span class="course__card-lessons">Darslar: 25</span>
+                          </div>
+                          <div class="card-text__lessons d-flex gap-2">
+                            <img src="images/user-icon.svg" class="course__card-icon user-icon" alt="O'quvchilar">
+                            <span class="course__card-lessons">O'quvchilar: 198</span>
+                          </div>
+                          <div class="card-text__lessons d-flex gap-2">
+                            <img src="images/certificate-icon.svg" class="course__card-icon certificate-icon" alt="Sertifikat">
+                            <span class="course__card-lessons">Sertifikat</span>
+                          </div>
+                        </div>
+                        <div class="card__button d-flex justify-content-between">
+                          <a href="#" class="btn mt-1 course__about-btn position-relative">Kurs haqida</a>
+                          <img src="images/Score.svg" alt="Score">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="courses__card-item">
+                      <img src="images/course-img.png" class="card-img-top mb-2" alt="Image">
+                      <div class="card-body">
+                        <h5 class="card-title mb-2">Backend Dasturlash</h5>
+                        <div class="card-text d-flex gap-4 mb-2">
+                          <div class="card-text__lessons d-flex gap-2">
+                            <img src="images/book-icon.svg" class="course__card-icon user-icon" alt="Book">
+                            <span class="course__card-lessons">Darslar: 25</span>
+                          </div>
+                          <div class="card-text__lessons d-flex gap-2">
+                            <img src="images/user-icon.svg" class="course__card-icon user-icon" alt="O'quvchilar">
+                            <span class="course__card-lessons">O'quvchilar: 198</span>
+                          </div>
+                          <div class="card-text__lessons d-flex gap-2">
+                            <img src="images/certificate-icon.svg" class="course__card-icon certificate-icon" alt="Sertifikat">
+                            <span class="course__card-lessons">Sertifikat</span>
+                          </div>
+                        </div>
+                        <div class="card__button d-flex justify-content-between">
+                          <a href="#" class="btn mt-1 course__about-btn position-relative">Kurs haqida</a>
+                          <img src="images/Score (4).svg" alt="Score">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="pills-programming" role="tabpanel" aria-labelledby="pills-programming-tab" tabindex="0">
+                <div class="row row-cols-1 row-cols-md-3 g-4 courses__body-cards">
+      
+                  <div class="col">
+                    <div class="courses__card-item">
+                      <img src="images/course-img.png" class="card-img-top mb-2" alt="Image">
+                      <div class="card-body">
+                        <h5 class="card-title mb-2">Web dizayn va grafik dizayn</h5>
+                        <div class="card-text d-flex gap-4 mb-2">
+                          <div class="card-text__lessons d-flex gap-2">
+                            <img src="images/book-icon.svg" class="course__card-icon user-icon" alt="Book">
+                            <span class="course__card-lessons">Darslar: 25</span>
+                          </div>
+                          <div class="card-text__lessons d-flex gap-2">
+                            <img src="images/user-icon.svg" class="course__card-icon user-icon" alt="O'quvchilar">
+                            <span class="course__card-lessons">O'quvchilar: 198</span>
+                          </div>
+                          <div class="card-text__lessons d-flex gap-2">
+                            <img src="images/certificate-icon.svg" class="course__card-icon certificate-icon" alt="Sertifikat">
+                            <span class="course__card-lessons">Sertifikat</span>
+                          </div>
+                        </div>
+                        <div class="card__button d-flex justify-content-between">
+                          <a href="#" class="btn mt-1 course__about-btn position-relative">Kurs haqida</a>
+                          <img src="images/Score (4).svg" alt="Score">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="courses__card-item">
+                      <img src="images/course-img.png" class="card-img-top mb-2" alt="Image">
+                      <div class="card-body">
+                        <h5 class="card-title mb-2">IT Foundation</h5>
+                        <div class="card-text d-flex gap-4 mb-2">
+                          <div class="card-text__lessons d-flex gap-2">
+                            <img src="images/book-icon.svg" class="course__card-icon user-icon" alt="Book">
+                            <span class="course__card-lessons">Darslar: 25</span>
+                          </div>
+                          <div class="card-text__lessons d-flex gap-2">
+                            <img src="images/user-icon.svg" class="course__card-icon user-icon" alt="O'quvchilar">
+                            <span class="course__card-lessons">O'quvchilar: 198</span>
+                          </div>
+                          <div class="card-text__lessons d-flex gap-2">
+                            <img src="images/certificate-icon.svg" class="course__card-icon certificate-icon" alt="Sertifikat">
+                            <span class="course__card-lessons">Sertifikat</span>
+                          </div>
+                        </div>
+                        <div class="card__button d-flex justify-content-between">
+                          <a href="#" class="btn mt-1 course__about-btn position-relative">Kurs haqida</a>
+                          <img src="images/Score.svg" alt="Score">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="courses__card-item">
+                      <img src="images/course-img.png" class="card-img-top mb-2" alt="Image">
+                      <div class="card-body">
+                        <h5 class="card-title mb-2">Fronted Dasturlash</h5>
+                        <div class="card-text d-flex gap-4 mb-2">
+                          <div class="card-text__lessons d-flex gap-2">
+                            <img src="images/book-icon.svg" class="course__card-icon user-icon" alt="Book">
+                            <span class="course__card-lessons">Darslar: 25</span>
+                          </div>
+                          <div class="card-text__lessons d-flex gap-2">
+                            <img src="images/user-icon.svg" class="course__card-icon user-icon" alt="O'quvchilar">
+                            <span class="course__card-lessons">O'quvchilar: 198</span>
+                          </div>
+                          <div class="card-text__lessons d-flex gap-2">
+                            <img src="images/certificate-icon.svg" class="course__card-icon certificate-icon" alt="Sertifikat">
+                            <span class="course__card-lessons">Sertifikat</span>
+                          </div>
+                        </div>
+                        <div class="card__button d-flex justify-content-between">
+                          <a href="#" class="btn mt-1 course__about-btn position-relative">Kurs haqida</a>
+                          <img src="images/Score (4).svg" alt="Score">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="courses__card-item">
+                      <img src="images/course-img.png" class="card-img-top mb-2" alt="Image">
+                      <div class="card-body">
+                        <h5 class="card-title mb-2">3D Modeling</h5>
+                        <div class="card-text d-flex gap-4 mb-2">
+                          <div class="card-text__lessons d-flex gap-2">
+                            <img src="images/book-icon.svg" class="course__card-icon user-icon" alt="Book">
+                            <span class="course__card-lessons">Darslar: 25</span>
+                          </div>
+                          <div class="card-text__lessons d-flex gap-2">
+                            <img src="images/user-icon.svg" class="course__card-icon user-icon" alt="O'quvchilar">
+                            <span class="course__card-lessons">O'quvchilar: 198</span>
+                          </div>
+                          <div class="card-text__lessons d-flex gap-2">
+                            <img src="images/certificate-icon.svg" class="course__card-icon certificate-icon" alt="Sertifikat">
+                            <span class="course__card-lessons">Sertifikat</span>
+                          </div>
+                        </div>
+                        <div class="card__button d-flex justify-content-between">
+                          <a href="#" class="btn mt-1 course__about-btn position-relative">Kurs haqida</a>
+                          <img src="images/Score (4).svg" alt="Score">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="courses__card-item">
+                      <img src="images/course-img.png" class="card-img-top mb-2" alt="Image">
+                      <div class="card-body">
+                        <h5 class="card-title mb-2">Video Montaj</h5>
+                        <div class="card-text d-flex gap-4 mb-2">
+                          <div class="card-text__lessons d-flex gap-2">
+                            <img src="images/book-icon.svg" class="course__card-icon user-icon" alt="Book">
+                            <span class="course__card-lessons">Darslar: 25</span>
+                          </div>
+                          <div class="card-text__lessons d-flex gap-2">
+                            <img src="images/user-icon.svg" class="course__card-icon user-icon" alt="O'quvchilar">
+                            <span class="course__card-lessons">O'quvchilar: 198</span>
+                          </div>
+                          <div class="card-text__lessons d-flex gap-2">
+                            <img src="images/certificate-icon.svg" class="course__card-icon certificate-icon" alt="Sertifikat">
+                            <span class="course__card-lessons">Sertifikat</span>
+                          </div>
+                        </div>
+                        <div class="card__button d-flex justify-content-between">
+                          <a href="#" class="btn mt-1 course__about-btn position-relative">Kurs haqida</a>
+                          <img src="images/Score.svg" alt="Score">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="courses__card-item">
+                      <img src="images/course-img.png" class="card-img-top mb-2" alt="Image">
+                      <div class="card-body">
+                        <h5 class="card-title mb-2">Backend Dasturlash</h5>
+                        <div class="card-text d-flex gap-4 mb-2">
+                          <div class="card-text__lessons d-flex gap-2">
+                            <img src="images/book-icon.svg" class="course__card-icon user-icon" alt="Book">
+                            <span class="course__card-lessons">Darslar: 25</span>
+                          </div>
+                          <div class="card-text__lessons d-flex gap-2">
+                            <img src="images/user-icon.svg" class="course__card-icon user-icon" alt="O'quvchilar">
+                            <span class="course__card-lessons">O'quvchilar: 198</span>
+                          </div>
+                          <div class="card-text__lessons d-flex gap-2">
+                            <img src="images/certificate-icon.svg" class="course__card-icon certificate-icon" alt="Sertifikat">
+                            <span class="course__card-lessons">Sertifikat</span>
+                          </div>
+                        </div>
+                        <div class="card__button d-flex justify-content-between">
+                          <a href="#" class="btn mt-1 course__about-btn position-relative">Kurs haqida</a>
+                          <img src="images/Score (4).svg" alt="Score">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="pills-foundation" role="tabpanel" aria-labelledby="pills-foundation-tab" tabindex="0">
+                <div class="row row-cols-1 row-cols-md-3 g-4 courses__body-cards">
+      
+                  <div class="col">
+                    <div class="courses__card-item">
+                      <img src="images/course-img.png" class="card-img-top mb-2" alt="Image">
+                      <div class="card-body">
+                        <h5 class="card-title mb-2">Web dizayn va grafik dizayn</h5>
+                        <div class="card-text d-flex gap-4 mb-2">
+                          <div class="card-text__lessons d-flex gap-2">
+                            <img src="images/book-icon.svg" class="course__card-icon user-icon" alt="Book">
+                            <span class="course__card-lessons">Darslar: 25</span>
+                          </div>
+                          <div class="card-text__lessons d-flex gap-2">
+                            <img src="images/user-icon.svg" class="course__card-icon user-icon" alt="O'quvchilar">
+                            <span class="course__card-lessons">O'quvchilar: 198</span>
+                          </div>
+                          <div class="card-text__lessons d-flex gap-2">
+                            <img src="images/certificate-icon.svg" class="course__card-icon certificate-icon" alt="Sertifikat">
+                            <span class="course__card-lessons">Sertifikat</span>
+                          </div>
+                        </div>
+                        <div class="card__button d-flex justify-content-between">
+                          <a href="#" class="btn mt-1 course__about-btn position-relative">Kurs haqida</a>
+                          <img src="images/Score (4).svg" alt="Score">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="courses__card-item">
+                      <img src="images/course-img.png" class="card-img-top mb-2" alt="Image">
+                      <div class="card-body">
+                        <h5 class="card-title mb-2">IT Foundation</h5>
+                        <div class="card-text d-flex gap-4 mb-2">
+                          <div class="card-text__lessons d-flex gap-2">
+                            <img src="images/book-icon.svg" class="course__card-icon user-icon" alt="Book">
+                            <span class="course__card-lessons">Darslar: 25</span>
+                          </div>
+                          <div class="card-text__lessons d-flex gap-2">
+                            <img src="images/user-icon.svg" class="course__card-icon user-icon" alt="O'quvchilar">
+                            <span class="course__card-lessons">O'quvchilar: 198</span>
+                          </div>
+                          <div class="card-text__lessons d-flex gap-2">
+                            <img src="images/certificate-icon.svg" class="course__card-icon certificate-icon" alt="Sertifikat">
+                            <span class="course__card-lessons">Sertifikat</span>
+                          </div>
+                        </div>
+                        <div class="card__button d-flex justify-content-between">
+                          <a href="#" class="btn mt-1 course__about-btn position-relative">Kurs haqida</a>
+                          <img src="images/Score.svg" alt="Score">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="courses__card-item">
+                      <img src="images/course-img.png" class="card-img-top mb-2" alt="Image">
+                      <div class="card-body">
+                        <h5 class="card-title mb-2">Fronted Dasturlash</h5>
+                        <div class="card-text d-flex gap-4 mb-2">
+                          <div class="card-text__lessons d-flex gap-2">
+                            <img src="images/book-icon.svg" class="course__card-icon user-icon" alt="Book">
+                            <span class="course__card-lessons">Darslar: 25</span>
+                          </div>
+                          <div class="card-text__lessons d-flex gap-2">
+                            <img src="images/user-icon.svg" class="course__card-icon user-icon" alt="O'quvchilar">
+                            <span class="course__card-lessons">O'quvchilar: 198</span>
+                          </div>
+                          <div class="card-text__lessons d-flex gap-2">
+                            <img src="images/certificate-icon.svg" class="course__card-icon certificate-icon" alt="Sertifikat">
+                            <span class="course__card-lessons">Sertifikat</span>
+                          </div>
+                        </div>
+                        <div class="card__button d-flex justify-content-between">
+                          <a href="#" class="btn mt-1 course__about-btn position-relative">Kurs haqida</a>
+                          <img src="images/Score (4).svg" alt="Score">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="courses__card-item">
+                      <img src="images/course-img.png" class="card-img-top mb-2" alt="Image">
+                      <div class="card-body">
+                        <h5 class="card-title mb-2">3D Modeling</h5>
+                        <div class="card-text d-flex gap-4 mb-2">
+                          <div class="card-text__lessons d-flex gap-2">
+                            <img src="images/book-icon.svg" class="course__card-icon user-icon" alt="Book">
+                            <span class="course__card-lessons">Darslar: 25</span>
+                          </div>
+                          <div class="card-text__lessons d-flex gap-2">
+                            <img src="images/user-icon.svg" class="course__card-icon user-icon" alt="O'quvchilar">
+                            <span class="course__card-lessons">O'quvchilar: 198</span>
+                          </div>
+                          <div class="card-text__lessons d-flex gap-2">
+                            <img src="images/certificate-icon.svg" class="course__card-icon certificate-icon" alt="Sertifikat">
+                            <span class="course__card-lessons">Sertifikat</span>
+                          </div>
+                        </div>
+                        <div class="card__button d-flex justify-content-between">
+                          <a href="#" class="btn mt-1 course__about-btn position-relative">Kurs haqida</a>
+                          <img src="images/Score (4).svg" alt="Score">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="courses__card-item">
+                      <img src="images/course-img.png" class="card-img-top mb-2" alt="Image">
+                      <div class="card-body">
+                        <h5 class="card-title mb-2">Video Montaj</h5>
+                        <div class="card-text d-flex gap-4 mb-2">
+                          <div class="card-text__lessons d-flex gap-2">
+                            <img src="images/book-icon.svg" class="course__card-icon user-icon" alt="Book">
+                            <span class="course__card-lessons">Darslar: 25</span>
+                          </div>
+                          <div class="card-text__lessons d-flex gap-2">
+                            <img src="images/user-icon.svg" class="course__card-icon user-icon" alt="O'quvchilar">
+                            <span class="course__card-lessons">O'quvchilar: 198</span>
+                          </div>
+                          <div class="card-text__lessons d-flex gap-2">
+                            <img src="images/certificate-icon.svg" class="course__card-icon certificate-icon" alt="Sertifikat">
+                            <span class="course__card-lessons">Sertifikat</span>
+                          </div>
+                        </div>
+                        <div class="card__button d-flex justify-content-between">
+                          <a href="#" class="btn mt-1 course__about-btn position-relative">Kurs haqida</a>
+                          <img src="images/Score.svg" alt="Score">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="courses__card-item">
+                      <img src="images/course-img.png" class="card-img-top mb-2" alt="Image">
+                      <div class="card-body">
+                        <h5 class="card-title mb-2">Backend Dasturlash</h5>
+                        <div class="card-text d-flex gap-4 mb-2">
+                          <div class="card-text__lessons d-flex gap-2">
+                            <img src="images/book-icon.svg" class="course__card-icon user-icon" alt="Book">
+                            <span class="course__card-lessons">Darslar: 25</span>
+                          </div>
+                          <div class="card-text__lessons d-flex gap-2">
+                            <img src="images/user-icon.svg" class="course__card-icon user-icon" alt="O'quvchilar">
+                            <span class="course__card-lessons">O'quvchilar: 198</span>
+                          </div>
+                          <div class="card-text__lessons d-flex gap-2">
+                            <img src="images/certificate-icon.svg" class="course__card-icon certificate-icon" alt="Sertifikat">
+                            <span class="course__card-lessons">Sertifikat</span>
+                          </div>
+                        </div>
+                        <div class="card__button d-flex justify-content-between">
+                          <a href="#" class="btn mt-1 course__about-btn position-relative">Kurs haqida</a>
+                          <img src="images/Score (4).svg" alt="Score">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <!-- End COURSES -->
-
+        <!-- End COURSES -->
+    </div>
 
 
     </div>
