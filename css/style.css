@@ -2,9 +2,10 @@
 @import "./fonts.css";
 
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
-
 
 .container {
     max-width: 1140px;
@@ -23,7 +24,7 @@
 .header__wrapper {
     width: 100%;
     min-height: 1100px;
-    background-image: url('../images/header-bg.svg');
+    /* background-image: url('../images/header-bg.svg'); */
     background-position: center top;
     background-size: cover;
 
@@ -91,6 +92,40 @@
     border: none;
     background: #FFFFFF;
     border-radius: 12px;
-    /* salom */
-    /* alik */
+}
+
+.site__footer {
+    background-color: var(--dark);
+    font-family: Gilroy;
+    padding: 10px 10px 0 10px;
+    color: #FFFFFF;
+    position: relative;
+    overflow: hidden;
+}
+
+.site__footer a {
+    text-decoration: none;
+}
+
+.footer__section::after {
+    content: url("../images/footer-before.svg");
+    position: absolute;
+    bottom: -10px;
+    right: 0;
+}
+
+.footer__logo{
+    margin-right: 3rem;
+}
+
+.footer__logoText {
+    font-size: 24px;
+}
+
+.footer__asosiy {
+    font-size: 18px;
+}
+
+.xizmat_raqami {
+    font-size: 22px;
 }
