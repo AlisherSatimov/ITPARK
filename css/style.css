@@ -7,7 +7,7 @@
 
 
 .container {
-    max-width: 1140px;
+    width: 1140px;
 }
 
 .green {
@@ -81,16 +81,111 @@
 }
 
 /* Start COURSES section */
+
+.courses__header {
+    margin-top: 125px;
+}
+
+.courses__header-title {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 49px;
+    /* identical to box height */
+    color: var(--dark);
+}
+
+.courses__header-btn {
+    gap: 8px;
+}
+
+.courses__btn {
+    padding: 10px 24px;
+    outline: none;
+    border: none;
+}
+
+.nav-item .active {
+    background: #F5F5F5;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+
+
 .courses__body {
-    padding: 20px;
-    border-radius: 20px;
+    margin-top: 35px;
+    filter: drop-shadow(0px 4px 30px rgba(0, 0, 0, 0.1));
 }
 
 .courses__card-item {
-    padding: 5px;
+    padding: 10px;
     border: none;
     background: #FFFFFF;
     border-radius: 12px;
-    /* salom */
-    /* alik */
+    gap: 12px;
+}
+
+.card-text__lessons {
+    font-size: 12px;
+}
+
+.user-icon {
+    width: 14px;
+    height: 16px;
+}
+
+.course__card-lessons {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    color: var(--dark);
+}
+
+.course__about-btn {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 13px 41px 13px 21px;
+    background-color: var(--green);
+    color: #FFFFFF;
+}
+
+.course__about-btn:hover {
+    background-color: var(--light-green);
+    color: #fff;
+}
+
+.course__about-btn::after {
+    content: url("../images/strelka.svg");
+    width: 6px;
+    height: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15px;
+}
+
+
+
+.course__wrapper::before {
+    content: url("../images/course-before.svg");
+    position: absolute;
+    width: 166.61px;
+    height: 161.2px;
+    top: -101px;
+    left: 45px;
+    transform: rotate(-180deg);
+    
 }
