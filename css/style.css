@@ -24,7 +24,7 @@
 .header__wrapper {
     width: 100%;
     min-height: 1100px;
-    background-image: url('../images/header-bg.svg');
+    background-image: url('../images/header-bg2.png');
     background-position: center top;
     background-size: cover;
 
@@ -305,10 +305,10 @@
     font-size: 24px;
 }
 
-.footer__asosiy {
+.footer__main {
     font-size: 18px;
 }
 
-.xizmat_raqami {
+.footer__contact {
     font-size: 22px;
 }
